@@ -16,8 +16,8 @@ LiquidCrystal_I2C lcd(0x27,2,1,0,4,5,6,7,3, POSITIVE);
 #define pinSensorA A0
 #define pinSensorD 8
 #define pinSolenoide 3
-const int analogInPin = A1;  // nome do pino ligado na porta analogica zero
+const int analogInPin = A1;
 
-int valorSensor = 0;        // Essa variavel inicia com valor zero
-int valorSaida = 0;        // Essa variavel inicia com valor zero
-int led = 7;              // porta digital 7
+int valorSensor = 0;
+int valorSaida = 0;
+int led = 7;              // Porta digital 7
