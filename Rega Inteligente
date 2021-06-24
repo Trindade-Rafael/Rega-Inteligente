@@ -41,3 +41,26 @@ void loop() {
  Serial.print(valorSaida); 
  Serial.print(valorSensor); 
   lcd.clear ();
+
+    if (digitalRead(pinSensorD)) {
+     lcd.print("SOLO SECO ");
+     delay(3000);
+     lcd.clear ();
+  }
+  else {
+     digitalWrite(led,0);
+     lcd.print("SOLO UMIDO ");
+     delay(5000);
+     lcd.clear ();
+  }
+  
+  if (valorSaida <= 30);
+  {
+    digitalWrite(led,1); // (PORTA , LIGADO)
+    delay(200);
+    digitalWrite(led,0); 
+    delay(200);
+    digitalWrite(led,1); // (PORTA , LIGADO)
+    delay(200);
+    digitalWrite(led,0); 
+    delay(200);
