@@ -29,10 +29,15 @@ void setup() {
 }
 
 void loop() {
- 
+ // Lê o valor da porta e armazena na variavel chamada (sensor value)
+  valorSensor = analogRead(analogInPin);
+   valorSaida = map(valorSensor, 550, 0, 0, 101);
   lcd.begin(16, 2);
   // Exibe a mensagem no Display LCD.
-  lcd.print(">REGA 2 BROTHERS ");
-    delay(5000);
- 
+  lcd.print(">JARDINTELIGENTE");
+  lcd.setCursor(0,1);
+  lcd.print(" FASE DE TESTES");
+    delay(3000);
+ Serial.print(valorSaida); 
+ Serial.print(valorSensor); 
   lcd.clear ();
