@@ -96,7 +96,6 @@ else {
    lcd.print(" %");
    delay(2000);
    lcd.clear ();
-     //delay(5000);
-     //lcd.setBacklight(LOW);
+     
   }
 }
