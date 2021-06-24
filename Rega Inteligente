@@ -64,3 +64,39 @@ void loop() {
     delay(200);
     digitalWrite(led,0); 
     delay(200);
+
+    
+   lcd.print("RESERVATORIO");
+   lcd.setCursor(0,1);
+   lcd.print("EM ");
+   lcd.print(valorSaida);
+   lcd.print(" %");
+   delay(3000);
+   lcd.clear ();
+  } 
+  
+
+ if (analogRead(pinSensorA) > 700) {
+     lcd.print("IRRIGANDO...");
+     digitalWrite(pinSolenoide, LOW);
+     delay(3000);
+     lcd.clear ();
+   
+  } 
+else {
+    lcd.setBacklight(HIGH);
+    lcd.print("IRRIG. DESLIGADA");
+     digitalWrite(pinSolenoide, HIGH);
+     delay(2000);
+     lcd.clear();
+     lcd.print("RESERVATORIO");
+   lcd.setCursor(0,1);
+   lcd.print("EM ");
+   lcd.print(valorSaida);
+   lcd.print(" %");
+   delay(2000);
+   lcd.clear ();
+     //delay(5000);
+     //lcd.setBacklight(LOW);
+  }
+}
