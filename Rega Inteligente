@@ -6,7 +6,9 @@
 #include <LiquidCrystal_SR.h>
 #include <LiquidCrystal_SR2W.h>
 #include <LiquidCrystal_SR3W.h>
+
 #include <Wire.h>
+
 
 // Inicializa o display no endereco 0x27
 // SCL (A5)
@@ -14,10 +16,5 @@
 LiquidCrystal_I2C lcd(0x27,2,1,0,4,5,6,7,3, POSITIVE);
 
 #define pinSensorA A0
-#define pinSensorD 8
+#define pinSensorD 8 // D0 do sensor
 #define pinSolenoide 3
-const int analogInPin = A1;
-
-int valorSensor = 0;
-int valorSaida = 0;
-int led = 7;              // Porta digital 7
