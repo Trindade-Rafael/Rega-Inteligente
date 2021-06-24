@@ -50,17 +50,17 @@ void loop() {
   else {
      digitalWrite(led,0);
      lcd.print("SOLO UMIDO ");
-     delay(5000);
+     delay(3000);
      lcd.clear ();
   }
   
   if (valorSaida <= 30);
   {
-    digitalWrite(led,1); // (PORTA , LIGADO)
+    digitalWrite(led,1);
     delay(200);
     digitalWrite(led,0); 
     delay(200);
-    digitalWrite(led,1); // (PORTA , LIGADO)
+    digitalWrite(led,1);
     delay(200);
     digitalWrite(led,0); 
     delay(200);
