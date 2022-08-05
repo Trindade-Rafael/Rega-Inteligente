@@ -1,9 +1,9 @@
 # Rega Inteligente
- Rega automática inteligente para apartamento ou locais com pouco espaço para cultivo de plantas
+ Rega inteligente automática para apartamento ou locais com pouco espaço para cultivo de plantas
 
  # Materiais:
 
-Placa Arduino
+Placa Arduino (Nano de preferência)
 
 Sensor de umidade de solo
 
